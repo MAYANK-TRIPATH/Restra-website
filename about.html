@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #61122f;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #61122f;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>If you're looking to work for a company with plenty of opportunity and a great team to work beside, United co. is the place for you!
+  </p>
+  <p>The goal of restaurant and food service establishments is to provide high-quality meals and excellent service to customers while staying within food and labour costs so that the operation can make a profit. This goal can only be achieved with the cooperation and support of all of the staff. Just as a football franchise only succeeds when the players and staff form a cohesive team, so too does a restaurant succeed only when the staff forms a working team.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="gppc.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>George Province</h2>
+        <p class="title">Managing Director</p>
+        <p>"Time management is really personal management, life management and management of yourself." — George province.</p>
+        <p>provincegeorge412@gmail.com</p>
+        <p><a href="" ><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="mtpc.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mayank Tripathi</h2>
+        <p class="title">Managing & Production Director</p>
+        <p>"Becoming is better than being." — Mayank Tripathi</p>
+        <p>mr.mayanktripathi2001@gmail.com</p>
+        <p><a href="portfolioo.html" ><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="dppc.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>D_p singh</h2>
+        <p class="title">CO. Manager</p>
+        <p>If you want to lift yourself up, lift up someone else." — Dp singh</p>
+        <p>divyaprakash2003@gmail.com</p>
+        <p><a href=""><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
